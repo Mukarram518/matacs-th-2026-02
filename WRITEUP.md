@@ -1,8 +1,8 @@
-\# AI Proposal Triage Design
+AI Proposal Triage Design
 
 
 
-\## 1. What should AI do, and what should remain rule-based?
+1\. What should AI do, and what should remain rule-based?
 
 
 
@@ -14,7 +14,7 @@ Mandatory eligibility checks, weighted score calculations, score validation, and
 
 
 
-\## 2. How will results remain repeatable and explainable?
+2\. How will results remain repeatable and explainable?
 
 
 
@@ -26,7 +26,7 @@ Missing information should be marked as unknown rather than guessed. The system 
 
 
 
-\## 3. Where should human review and audit logs be required?
+3\. Where should human review and audit logs be required?
 
 
 
@@ -38,7 +38,7 @@ Audit logs should record the proposal identifier, extracted evidence, eligibilit
 
 
 
-\## 4. How should the system handle changing criteria?
+4\. How should the system handle changing criteria?
 
 
 
@@ -46,23 +46,23 @@ Store evaluation criteria and weights in version-controlled configuration rather
 
 
 
-\## 5. What are the key risks and safeguards?
+5\. What are the key risks and safeguards?
 
 
 
-\- \*\*Incorrect extraction:\*\* Require evidence for extracted facts and review uncertain fields.
+&#x20;Incorrect extraction: Require evidence for extracted facts and review uncertain fields.
 
-\- \*\*Prompt injection:\*\* Treat proposal contents as untrusted data, not system instructions.
+&#x20;Prompt injection: Treat proposal contents as untrusted data, not system instructions.
 
-\- \*\*Bias or inconsistent scoring:\*\* Use documented scoring bands and the same rules for every bidder.
+&#x20;Bias or inconsistent scoring: Use documented scoring bands and the same rules for every bidder.
 
-\- \*\*Missing information:\*\* Mark unknown values explicitly and flag them rather than inventing answers.
+&#x20;Missing information: Mark unknown values explicitly and flag them rather than inventing answers.
 
-\- \*\*Unauthorized access:\*\* Restrict access to proposals and protect sensitive business information.
+&#x20;Unauthorized access: Restrict access to proposals and protect sensitive business information.
 
-\- \*\*Calculation errors:\*\* Use deterministic code, input validation, and automated tests.
+&#x20;Calculation errors: Use deterministic code, input validation, and automated tests.
 
-\- \*\*Unreviewed decisions:\*\* Require human approval before final selection.
+&#x20;Unreviewed decisions: Require human approval before final selection.
 
 
 
