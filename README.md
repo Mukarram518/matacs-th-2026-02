@@ -1,16 +1,16 @@
-\# AI Proposal Triage Design
+AI Proposal Triage Design
 
 
 
-\*\*Candidate:\*\* Mukarram Ali  
+Candidate: Mukarram Ali
 
-\*\*Assessment Reference:\*\* MATACS-TH-2026-02  
-
-\*\*Time Spent:\*\* \[Wednesday, October 28, 2026, 9:20 PM PKT (Pakistan Standard Time)]
+Assessment Reference:MATACS-TH-2026-02
 
 
 
-\## Project Overview
+
+
+Project Overview
 
 
 
@@ -18,23 +18,23 @@ This project proposes a human-supervised workflow for evaluating commercial roof
 
 
 
-\## Repository Contents
+&#x20;Repository Contents
 
 
 
-\- \[WRITEUP.md](WRITEUP.md) — Design decisions, evaluation approach, and safeguards.
+&#x20;\[WRITEUP.md](WRITEUP.md) — Design decisions, evaluation approach, and safeguards.
 
-\- \[ranking.json](ranking.json) — Eligibility outcomes, proposed scores, ranks, and reasons for proposals A–E.
+&#x20;\[ranking.json](ranking.json) — Eligibility outcomes, proposed scores, ranks, and reasons for proposals A–E.
 
-\- \[PROMPTS.md](PROMPTS.md) — AI prompts and implementation notes.
+&#x20;\[PROMPTS.md](PROMPTS.md) — AI prompts and implementation notes.
 
-\- \[diagram/flow.png](diagram/flow.png) — Process-flow diagram.
+&#x20;\[diagram/flow.png](diagram/flow.png) — Process-flow diagram.
 
-\- \[README.md](README.md) — Project overview and assessment details.
+&#x20;\[README.md](README.md) — Project overview and assessment details.
 
 
 
-\## How AI Was Used
+How AI Was Used
 
 
 
@@ -42,23 +42,23 @@ I used ChatGPT to help organize the design, draft the written explanation and pr
 
 
 
-\## Important Design Decisions
+&#x20;Important Design Decisions
 
 
 
-\- Mandatory eligibility requirements are checked using deterministic rules.
+&#x20; Mandatory eligibility requirements are checked using deterministic rules.
 
-\- Missing or ambiguous information is flagged rather than invented.
+&#x20; Missing or ambiguous information is flagged rather than invented.
 
-\- Proposal instructions that attempt to manipulate the evaluation are treated as untrusted content.
+&#x20; Proposal instructions that attempt to manipulate the evaluation are treated as untrusted content.
 
-\- Scores and decisions should be traceable to evidence, criteria versions, and reviewer actions.
+&#x20; Scores and decisions should be traceable to evidence, criteria versions, and reviewer actions.
 
-\- A human reviewer retains responsibility for the final procurement decision.
+&#x20; A human reviewer retains responsibility for the final procurement decision.
 
 
 
-\## Scope and Limitations
+&#x20;Scope and Limitations:
 
 
 
